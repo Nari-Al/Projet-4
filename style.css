@@ -85,6 +85,23 @@ button {
   fill: #353535;
 }
 
-.fonctionnement .restaurants {
-  padding: 16px;
+.fonctionnement, .restaurants {
+  padding: 4em 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tuto-card {
+  width: 320px;
+  height: 72px;
+  background-color: #f6f6f6;
+  margin: 1em 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
