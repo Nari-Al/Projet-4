@@ -92,12 +92,12 @@ button {
 }
 
 .tuto-card {
-  width: 320px;
+  width: 80%;
   height: 72px;
   background-color: #f6f6f6;
   margin: 1em 0;
   border-radius: 20px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
