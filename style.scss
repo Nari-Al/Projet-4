@@ -58,6 +58,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2em 0;
+    padding-bottom: 3em;
     h2 {
         text-align: center;
         width: 80%;
@@ -70,7 +72,6 @@ nav {
         margin-bottom: 1.75em;
     }
     button {
-        margin-bottom: 3em;
         font-weight: 500;
         font-size: 16px;
     }
@@ -102,13 +103,20 @@ button {
 }
 
 .fonctionnement, .restaurants {
-    padding: 4em 1em;
+    padding: 4em 1.5em;
     display: flex;
     flex-wrap: wrap;
+    & h2 {
+        margin-bottom: 1em;
+    }
+}
+
+.restaurants {
+    background-color: #f6f6f6;
 }
 
 .tuto-card {
-    width: 80%;
+    width: 100%;
     height: 72px;
     background-color: #f6f6f6;
     margin: 1em 0;
@@ -122,6 +130,28 @@ button {
     font-weight: 500;
 }
 
+.card {
+    width: 100%;
+    border-radius: 20px;
+    height: 250px;
+    background-color: #fff;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 160px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    p {
+        padding: 0 0.75em;
+        font-family: 'roboto';
+        font-weight: 300;
+        font-size: 17px;
+        b {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
 
 // ANIMATIONS FRAMES ?
 
