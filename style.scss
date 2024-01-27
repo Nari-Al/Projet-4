@@ -71,10 +71,7 @@ nav {
         font-weight: 300;
         margin-bottom: 1.75em;
     }
-    button {
-        font-weight: 500;
-        font-size: 16px;
-    }
+    
 }
 
 button {
@@ -85,6 +82,9 @@ button {
     padding: 1em;
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
     transition: 0.5s;
+    font-weight: 500;
+    font-size: 16px;
+    
     &:hover {
         transform: scale(1.1);
     }
@@ -110,13 +110,15 @@ button {
 }
 
 .fonctionnement, .restaurants {
-    padding: 4em 1.5em;
+    padding: 4em 1em;
     display: flex;
     flex-wrap: wrap;
     & h2 {
         margin-bottom: 1em;
     }
 }
+
+
 
 .restaurants {
     background-color: #f6f6f6;
@@ -137,10 +139,16 @@ button {
     font-weight: 500;
 }
 
+.restaurants a {
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
 .card {
     width: 100%;
     border-radius: 20px;
-    height: 250px;
+    margin: 0.5em 0;
     background-color: #fff;
     img {
         object-fit: cover;
@@ -158,6 +166,10 @@ button {
             font-size: 18px;
         }
     }
+}
+
+.restaurants .card {
+    height: 250px;
 }
 
 footer {
@@ -181,5 +193,69 @@ footer {
         }
     }
 }
-// ANIMATIONS FRAMES ?
+
+
+
+
+
+.menu {
+    padding: 1em;
+    border-radius: 40px;
+    background-color: #f6f6f6;
+    position: relative;
+    bottom: 3.5em;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.menu {
+    h1 {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: 'Shrikhand';
+        color: black;
+        text-decoration: none;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-family: 'roboto';
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .card {
+        padding: 1em 0;
+        p {
+            margin: 0;
+            font-family: 'roboto';
+                font-weight: 300;
+                font-size: 15px;
+                padding: 0 1em;
+            b {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        .menu-card-check {
+            background-color: var(--tertiary-green);
+            width: 0;
+            height: 100%;
+        }
+        &:hover {
+            .menu-card-check {
+                width: 200px;
+            }
+        }
+    }
+    button {
+        margin: 0 auto;
+        display: flex;
+    }
+} 
+
+.menu-section {
+    margin-bottom: 2em;
+}
 
