@@ -95,7 +95,7 @@ button:hover {
   position: relative;
   z-index: 8;
 }
-.location svg {
+.location i {
   margin-right: 0.75em;
   fill: #353535;
 }
@@ -126,6 +126,15 @@ button:hover {
   font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
+}
+.tuto-card i {
+  position: absolute;
+  left: 64px;
+  font-size: 1.5em;
+  color: #7E7E7E;
+}
+.tuto-card:hover i {
+  color: var(--primary-purple);
 }
 
 .restaurants a {
@@ -172,6 +181,7 @@ footer h1 {
   font-family: "shrikhand";
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 1em;
 }
 footer ul {
   list-style: none;
@@ -182,10 +192,8 @@ footer ul {
 }
 footer ul b {
   font-weight: 500;
-}
-footer svg {
-  height: 16px;
-  margin-right: 8px;
+  position: absolute;
+  left: 3.25em;
 }
 
 .menu {
