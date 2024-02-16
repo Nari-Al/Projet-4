@@ -362,14 +362,38 @@ button {
   animation-fill-mode: both;
 }
 
-.menu-section .card:nth-child(1) {
+#menu-card-entree1 {
   animation-delay: 0s;
 }
 
-.menu-section .card:nth-child(2) {
-  animation-delay: 0.5s;
+#menu-card-entree2 {
+  animation-delay: 0.2s;
 }
 
-.menu-section .card:nth-child(3) {
+#menu-card-entree3 {
+  animation-delay: 0.4s;
+}
+
+#menu-card-plat1 {
+  animation-delay: 0.6s;
+}
+
+#menu-card-plat2 {
+  animation-delay: 0.8s;
+}
+
+#menu-card-plat3 {
   animation-delay: 1s;
+}
+
+#menu-card-dessert1 {
+  animation-delay: 1.2s;
+}
+
+#menu-card-dessert2 {
+  animation-delay: 1.4s;
+}
+
+#menu-card-dessert3 {
+  animation-delay: 1.6s;
 }/*# sourceMappingURL=style.css.map */
