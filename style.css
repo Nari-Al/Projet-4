@@ -396,4 +396,53 @@ button {
 
 #menu-card-dessert3 {
   animation-delay: 1.6s;
+}
+
+.loading-screen {
+  display: none;
+  background: #fff;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.loading-screen h1 {
+  margin: auto;
+  font-family: "Shrikhand";
+  animation: 1.5s ease-out 0s 1 Pulse;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.loading-screen h1::after {
+  content: "";
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 121, 218, 0) 0%, rgba(255, 121, 218, 0) 55%, rgb(204, 105, 219) 67%, rgb(147, 86, 220) 72%);
+  position: absolute;
+  top: -3.2em;
+  left: -1.2em;
+  animation: 1.5s ease-out 0s 1 Waves;
+  animation-iteration-count: infinite;
+  transform: scaleY(0.8);
+}
+
+@keyframes Pulse {
+  25% {
+    font-size: 48px;
+  }
+  75% {
+    font-size: 40px;
+  }
+}
+@keyframes Waves {
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
