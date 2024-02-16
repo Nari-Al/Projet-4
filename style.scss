@@ -22,6 +22,10 @@
 
 // GENERAL CLASSES
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -360,7 +364,7 @@ footer {
     margin-bottom: 2em;
 }
 
-@keyframes slideInBottom {
+@keyframes slideInLeft {
     0% {
       transform: translateX(200%);
       opacity: 0;
@@ -375,25 +379,52 @@ footer {
   }
 
 .menu .card {
-    animation: 0.8s ease-out 0s 1 slideInBottom;
+    animation: 0.8s ease-out 0s 1 slideInLeft;
     animation-fill-mode: both;
 }
 .menu h2 {
-    animation: 0.6s ease-out 0s 1 slideInBottom;
+    animation: 0.6s ease-out 0s 1 slideInLeft;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
 
-// .menu .card:nth-child(1) {animation-delay: 0.0s; }
-// .menu .card:nth-child(2) {animation-delay: 0.5s; }
-// .menu .card:nth-child(3) {animation-delay: 1s; }
+.menu-section .card:nth-child(1) {animation-delay: 0.0s; }
+.menu-section .card:nth-child(2) {animation-delay: 0.5s; }
+.menu-section .card:nth-child(3) {animation-delay: 1s; }
 
-#menu-card-entree1 {animation-delay: 0.0s; }
-#menu-card-entree2 {animation-delay: 0.2s; }
-#menu-card-entree3 {animation-delay: 0.4s; }
-#menu-card-plat1 {animation-delay: 0.6s; }
-#menu-card-plat2 {animation-delay: 0.8s; }
-#menu-card-plat3 {animation-delay: 1s; }
-#menu-card-dessert1 {animation-delay: 1.2s; }
-#menu-card-dessert2 {animation-delay: 1.4s; }
-#menu-card-dessert3 {animation-delay: 1.6s; }
+// #menu-card-entree1 {animation-delay: 0.0s; }
+// #menu-card-entree2 {animation-delay: 0.2s; }
+// #menu-card-entree3 {animation-delay: 0.4s; }
+// #menu-card-plat1 {animation-delay: 0.6s; }
+// #menu-card-plat2 {animation-delay: 0.8s; }
+// #menu-card-plat3 {animation-delay: 1s; }
+// #menu-card-dessert1 {animation-delay: 1.2s; }
+// #menu-card-dessert2 {animation-delay: 1.4s; }
+// #menu-card-dessert3 {animation-delay: 1.6s; }
+
+
+
+// .loading-screen {
+//     background: #fff;
+//     display: flex;
+//     height: 100vh;
+//     width: 100vw;
+//     position: sticky;
+//     top: 0;
+//     z-index: 20;
+// }
+
+// @keyframes slideInBottom {
+//     0% {
+//         transform: translateY(100%);
+//         border-radius: 25px;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         border-radius: 0;
+//     }
+// }
+
+// .loading-screen {
+//     animation: 0.8s ease-out 0s 1 slideInBottom;
+// }
