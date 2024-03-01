@@ -204,6 +204,14 @@ button:hover::after {
 
 .restaurants .card {
   height: 250px;
+  position: relative;
+}
+.restaurants .card i {
+  position: absolute;
+  right: 1em;
+  top: 190px;
+  color: var(--primary-purple);
+  font-size: 2em;
 }
 
 footer {
@@ -399,14 +407,16 @@ button {
 }
 
 .loading-screen {
-  display: none;
   background: #fff;
   display: flex;
   height: 100vh;
   width: 100vw;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 20;
+  animation: 3s Disappear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
 .loading-screen h1 {
   margin: auto;
@@ -444,5 +454,16 @@ button {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes Disappear {
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
   }
 }/*# sourceMappingURL=style.css.map */
