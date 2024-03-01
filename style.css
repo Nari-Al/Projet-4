@@ -143,15 +143,29 @@ button:hover::after {
   margin-bottom: 1em;
 }
 
+.fonctionnement {
+  margin: 0 auto;
+}
+
 .restaurants {
   background-color: #f6f6f6;
 }
 
+.restaurants-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fonctionnement-tuto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tuto-card {
-  width: 100%;
+  width: 330px;
   height: 72px;
   background-color: #f6f6f6;
-  margin: 1em 0;
+  margin: 1em auto;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -160,16 +174,27 @@ button:hover::after {
   font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
+  position: relative;
 }
 .tuto-card i {
   position: absolute;
-  left: 64px;
+  left: 40px;
   font-size: 1.5em;
   color: #7E7E7E;
   transition: 0.5s;
 }
 .tuto-card:hover i {
   color: var(--primary-purple);
+}
+
+.tuto-number {
+  padding: 0.5em 0.75em;
+  border-radius: 25px;
+  background-color: var(--primary-purple);
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  left: -1em;
 }
 
 .restaurants a {
@@ -206,12 +231,39 @@ button:hover::after {
   height: 250px;
   position: relative;
 }
-.restaurants .card i {
+.restaurants .card .label-new-restaurant {
+  background-color: var(--tertiary-green);
+  color: #008766;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.restaurants .card .heart-container {
   position: absolute;
   right: 1em;
   top: 190px;
-  color: var(--primary-purple);
   font-size: 2em;
+}
+.restaurants .card .heart-container .fa-solid {
+  position: absolute;
+  top: 2px;
+  color: transparent;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(180deg, var(--primary-purple) 0%, var(--secondary-pink) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants .card .heart-container .fa-regular {
+  color: #101010;
+}
+.restaurants .card .heart-container:hover .fa-solid {
+  transform: scale(1.1);
 }
 
 footer {
@@ -226,17 +278,22 @@ footer h1 {
   font-weight: 400;
   margin-bottom: 1em;
 }
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+footer .links-footer {
+  height: 100px;
   font-size: 16px;
   font-weight: 400;
+  display: flex;
+  flex-direction: unset;
 }
-footer ul b {
+footer .links-footer a {
+  display: flex;
+  width: 200px;
+}
+footer .links-footer a i {
+  margin-right: 0.5em;
+}
+footer .links-footer b {
   font-weight: 500;
-  position: absolute;
-  left: 3.25em;
 }
 
 .menu {
@@ -465,5 +522,21 @@ button {
     opacity: 0;
     overflow: hidden;
     transform: translateY(-100%);
+  }
+}
+@media (min-width: 480px) {
+  .tuto-number {
+    color: red;
+  }
+  .restaurants {
+    padding: 4em 3em;
+  }
+  .fonctionnement {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 4em 3em;
+  }
+  .links-footer {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

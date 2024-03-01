@@ -158,18 +158,32 @@ button {
         margin-bottom: 1em;
     }
 }
-
-
-
+.fonctionnement {
+    margin: 0 auto;
+}
 .restaurants {
     background-color: #f6f6f6;
 }
 
+.restaurants-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fonctionnement-tuto {
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
 .tuto-card {
-    width: 100%;
+    width: 330px;
     height: 72px;
     background-color: #f6f6f6;
-    margin: 1em 0;
+    margin: 1em auto;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
     display: flex;
@@ -178,9 +192,10 @@ button {
     font-family: 'roboto';
     font-size: 16px;
     font-weight: 500;
+    position: relative;
     i {
         position: absolute;
-        left: 64px;
+        left: 40px;
         font-size: 1.5em;
         color: #7E7E7E;
         transition: 0.5s;
@@ -188,6 +203,16 @@ button {
     &:hover i {
         color: var(--primary-purple);
     }
+}
+
+.tuto-number {
+    padding: 0.5em 0.75em;
+    border-radius: 25px;
+    background-color: var(--primary-purple);
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: -1em;
 }
 
 .restaurants a {
@@ -222,12 +247,40 @@ button {
 .restaurants .card {
     height: 250px;
     position: relative;
-    i {
+    .label-new-restaurant {
+        background-color: var(--tertiary-green);
+        color: #008766;
+        width: fit-content;
+        padding: 0.5em 1em;
+        border-radius: 2px;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    .heart-container {
         position: absolute;
         right: 1em;
         top: 190px;
-        color: var(--primary-purple);
         font-size: 2em;
+        .fa-solid {
+            position: absolute;
+            top: 2px;
+            color: transparent;
+            transform: scale(0);
+            transition: all 0.3s ease-in-out;
+            background-image: linear-gradient(180deg, var(--primary-purple) 0%, var(--secondary-pink) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        .fa-regular {
+            color: #101010;
+        }
+        &:hover {
+            .fa-solid {
+                transform: scale(1.1);
+            }
+        }
     }
 }
 
@@ -242,16 +295,21 @@ footer {
         font-weight: 400;
         margin-bottom: 1em;
     }
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    .links-footer {
+        height: 100px;
         font-size: 16px;
         font-weight: 400;
+        display: flex;
+        flex-direction: unset;
+        a{
+            display: flex;
+            i {
+                margin-right: 0.5em;
+            }
+            width: 200px;
+        }
         b {
             font-weight: 500;
-            position: absolute;
-            left: 3.25em;
         }
     }
 }
@@ -471,5 +529,23 @@ footer {
         opacity: 0;
         overflow: hidden;
         transform: translateY(-100%);
+    }
+}
+
+@media (min-width: 480px) {
+    .tuto-number {
+        color: red;
+    }
+
+    .restaurants {
+        padding: 4em 3em;
+    }
+    .fonctionnement {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 4em 3em;
+    }
+    .links-footer {
+        flex-direction: row;
     }
 }
