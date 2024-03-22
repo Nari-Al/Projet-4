@@ -180,7 +180,7 @@ button {
 
 
 .tuto-card {
-    width: 330px;
+    width: 310px;
     height: 72px;
     background-color: #f6f6f6;
     margin: 1em auto;
@@ -423,6 +423,30 @@ footer {
             
         }
         }
+        .heart-container {
+            position: absolute;
+            right: 1.5em;
+            top: 1em;
+            font-size: 2em;
+            .fa-solid {
+                position: absolute;
+                top: 2px;
+                color: transparent;
+                transform: scale(0);
+                transition: all 0.3s ease-in-out;
+                background-image: linear-gradient(180deg, var(--primary-purple) 0%, var(--secondary-pink) 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            .fa-regular {
+                color: #101010;
+            }
+            &:hover {
+                .fa-solid {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
     button {
         margin: 0 auto;
@@ -554,6 +578,10 @@ footer {
     .tuto-number {
         color: blue;
     }
+    .fonctionnement-card-container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
     .restaurants {
         h2 {
             width: 100%;
@@ -567,11 +595,8 @@ footer {
             margin: 0 auto;
             justify-content: space-between;
             a {
-                width: 500px;
+                width: 48%;
                 margin-bottom: 48px;
-                .card {
-                    width: 500px;
-                }
             }
         }
     }
@@ -581,6 +606,9 @@ footer {
         padding-bottom: 2em;
         h1 {
             text-align: center;
+        }
+        .heart-container {
+            right: 10em;
         }
     }
     footer {

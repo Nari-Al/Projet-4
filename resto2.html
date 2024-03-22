@@ -5,32 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav><h1>ohmyfood</h1></nav>
+        <nav>
+            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#353535" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a>
+            <h1>ohmyfood</h1>
+        </nav>
     </header>
     <main>
         <img class="hero-image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant La palette du goût">
         <div class="menu">
-            <h1>La palette du goût</h1>
+            <h1>La note enchantée</h1>
+            <div class="heart-container"><i class="fa-solid fa-heart"></i><i class="fa-regular fa-heart"></i></div>
             <section class="menu-section">
                 <h2>Entrées</h2>
-                <div class="card"><div class="menu-card-inner"><p><b>Fricassé d'escargot</b><br>Au piment d'Espelette</p></div><div class="menu-card-check"></div></div>
-                <div class="card"><div class="menu-card-inner"><p><b>Foie gras de canard mi-cuit</b><br>Et ses copeaux de truffe noire</p></div><div class="menu-card-check"></div></div>
-                <div class="card"><div class="menu-card-inner"><p><b>Œuf au plat</b><br>Assaisonné à la truffe sur lit de caviar</p></div><div class="menu-card-check"></div></div>
+                <div class="card" id="menu-card-entree1"><div class="menu-card-inner"><p><b>Ravioles de foie gras</b><br>Accompagnées de leur crème à la truffe</p></div><div class="menu-card-price">25€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-entree2"><div class="menu-card-inner"><p><b>Caviar osciètre</b><br>Sur blini à la farine de blé noir</p></div><div class="menu-card-price">35€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-entree3"><div class="menu-card-inner"><p><b>Homard et espuma de potiron</b><br>Marinés aux zestes d'orange</p></div><div class="menu-card-price">20€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-entree2"><div class="menu-card-inner"><p><b>Foie gras de canard cuit entier</b><br>Confiture de figue et pain toasté</p></div><div class="menu-card-price">35€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
             </section>
             <section class="menu-section">
                 <h2>Plats</h2>
-                <div class="card"><div class="menu-card-inner"><p><b>Filet de bœuf aux herbes</b><br>Accompagné de sa ribambelle de légumes</p></div><div class="menu-card-check"></div></div>
-                <div class="card"><div class="menu-card-inner"><p><b>Parmentier de queue de bœuf</b><br>À la truffe noire sur sa purée de panais</p></div><div class="menu-card-check"></div></div>
-                <div class="card"><div class="menu-card-inner"><p><b>Filet de turbot</b><br>Aux agrumes</p></div><div class="menu-card-check"></div></div>
+                <div class="card" id="menu-card-plat1"><div class="menu-card-inner"><p><b>Noix de coquilles Saint-Jacques</b><br>Sur lit de céleri-rave</p></div><div class="menu-card-price">40€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-plat2"><div class="menu-card-inner"><p><b>Langoustine poêlée</b><br>Purée de patate douce</p></div><div class="menu-card-price">35€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-plat3"><div class="menu-card-inner"><p><b>Mijoté de queue de boeuf</b><br>Et riz sauvage aux zestes de citron</p></div><div class="menu-card-price">45€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
             </section>
             <section class="menu-section">
                 <h2>Desserts</h2>
-                <div class="card"><div class="menu-card-inner"><p><b>Paris-Brest</b><br>Revisité</p></div><div class="menu-card-check"></div></div>
-                <div class="card"><div class="menu-card-inner"><p><b>Macaron au chocolat d'exception</b><br>Et glace à la vanille de Madagascar</p></div><div class="menu-card-check"></div></div>
-                <div class="card"><div class="menu-card-inner"><p><b>Mousse au chocolat</b><br>Au piment d'Espelette et à la truffe noire</p></div><div class="menu-card-check"></div></div>
+                <div class="card" id="menu-card-dessert1"><div class="menu-card-inner"><p><b>Macaron noisette et chocolat</b><br>Glace au caramel brun de Guérande</p></div><div class="menu-card-price">18€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-dessert2"><div class="menu-card-inner"><p><b>Baba au rhum revisité</b><br>Avec son coulis de citron</p></div><div class="menu-card-price">22€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="card" id="menu-card-dessert3"><div class="menu-card-inner"><p><b>Tarte au citron meringuée</b><br>Destructurée</p></div><div class="menu-card-price">23€</div><div class="menu-card-check"><i class="fa-solid fa-circle-check"></i></div></div>
             </section>
             <button>Commander</button>
         </div>
